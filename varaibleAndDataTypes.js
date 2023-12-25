@@ -22,4 +22,6 @@ const profile = {
 
 };
 
-console.log(typeof profile.isOnline)
+profile.followers += 700;
+
+console.log(profile)
