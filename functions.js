@@ -31,35 +31,43 @@
 let string = 'my name is tamoor khaskheli and i live in matli district badin';
 const vowel ='aeiou'
 
-function vowelInString(string , vowel) {
+// function vowelInString(string , vowel) {
+//     let count = 0;
+//     for (let i = 0; i < string.length; i++) {
+//         for (let j = 0; j < vowel.length; j++) {
+//             if (string[i] == vowel[j]) {
+//                 count++
+//             }
+//         }
+//     } 
+//     return count
+// }
+
+// const totalVowels = vowelInString(string,vowel)
+// console.log(`string: ${string} has = ${totalVowels} vowels`)
+
+
+// const countVowels = (param1 , param2) => {
+//     let count = 0;
+//     for (let i = 0; i < param1.length; i++) {
+//         for (let j = 0; j < param2.length; j++) {
+//             if (param1[i] == param2[j]) {
+//                 count++
+//             }
+//         }
+//     }
+//     return count
+// }
+
+// console.log(countVowels('khaskheli and tamoor','aeiou'))
+
+function countVowels(param){
     let count = 0;
-    for (let i = 0; i < string.length; i++) {
-        for (let j = 0; j < vowel.length; j++) {
-            if (string[i] == vowel[j]) {
-                count++
-            }
-            
-        }
-    } 
-    return count
-}
-
-const totalVowels = vowelInString(string,vowel)
-console.log(`string: ${string} has = ${totalVowels} vowels`)
-
-
-const countVowels = (param1 , param2) => {
-    let count = 0;
-    for (let i = 0; i < param1.length; i++) {
-        for (let j = 0; j < param2.length; j++) {
-            if (param1[i] == param2[j]) {
-                count++
-            }
-            
-        }
-        
+    for (const i of param) {
+        if(i == 'a' || i == "e" || i == "o" || i == "i" || i== "o" )
+        count++
     }
     return count
 }
 
-console.log(countVowels('khaskheli and tamoor','aeiou'))
+console.log(countVowels("tamoor"))
