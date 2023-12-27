@@ -1,1 +1,4 @@
-(item - item*0.10)
+  // for (let j = 0; j < vowel.length; j++) {
+        
+        
+    // }
