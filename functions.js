@@ -74,10 +74,12 @@
 
 // for each loop used in loop it is a method not a function
 // callback is a function which is passed as an argument to another function
-// let arr = [1,2,3]
+let arr = ['karachi','hyderabad','delhi','lahore']
 
-arr.forEach(element => {
-    console.log(arr[element])
-});
+arr.forEach((newval,index,array) => {
+    console.log(newval.toUpperCase(),index,array)
+})
+
+
 
 // console.log(Math.floor(Math.random()*150));
