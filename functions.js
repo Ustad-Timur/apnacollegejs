@@ -28,8 +28,8 @@
 // console.log(multi)
 
 //prctice questions find total vowels in string 
-let string = 'my name is tamoor khaskheli and i live in matli district badin';
-const vowel ='aeiou'
+// let string = 'my name is tamoor khaskheli and i live in matli district badin';
+// const vowel ='aeiou'
 
 // function vowelInString(string , vowel) {
 //     let count = 0;
@@ -61,13 +61,23 @@ const vowel ='aeiou'
 
 // console.log(countVowels('khaskheli and tamoor','aeiou'))
 
-function countVowels(param){
-    let count = 0;
-    for (const i of param) {
-        if(i == 'a' || i == "e" || i == "o" || i == "i" || i== "o" )
-        count++
-    }
-    return count
-}
+// function countVowels(param){
+//     let count = 0;
+//     for (const i of param) {
+//         if(i == 'a' || i == "e" || i == "o" || i == "i" || i== "o" )
+//         count++
+//     }
+//     return count
+// }
 
-console.log(countVowels("tamoor"))
+// console.log(countVowels("tamoor"))
+
+// for each loop used in loop it is a method not a function
+// callback is a function which is passed as an argument to another function
+// let arr = [1,2,3]
+
+arr.forEach(element => {
+    console.log(arr[element])
+});
+
+// console.log(Math.floor(Math.random()*150));
