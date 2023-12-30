@@ -74,12 +74,81 @@
 
 // for each loop used in loop it is a method not a function
 // callback is a function which is passed as an argument to another function
-let arr = ['karachi','hyderabad','delhi','lahore']
+// let arr = ['karachi','hyderabad','delhi','lahore']
 
-arr.forEach((newval,index,array) => {
-    console.log(newval.toUpperCase(),index,array)
-})
+// arr.forEach((newval,index,array) => {
+//     console.log(newval.toUpperCase(),index,array)
+// })
 
+//higher order function or method can take other function as parameter or returns a function
 
+//given an array print square of each number
+
+//  let num = [1,2,3,4,5,6];
+
+// let findSquare = (num) => {
+//     console.log(`The square of ${num} is ${num*num}`);
+// }
+
+// num.forEach ((item , num,arr)=> {
+//     console.log(`The square of ${item} is ${item*item}`)
+// })
+
+// or we can simply
+
+// num.forEach(findSquare);
 
 // console.log(Math.floor(Math.random()*150));
+
+// let nums = [1,2,3,4,5,6,8,9,10,11,12,13,14,15,16];
+// let newNum = nums.map((newNum) => {
+//     return newNum*newNum
+// })
+// console.log(nums)
+// console.log(newNum)
+
+// let evenArr = nums.filter((even)=>{
+//     return even == 'talal'
+// })
+
+// // console.log(evenArr);
+// let nums = [23,52,63,96,23,100,92]
+// const largestNum = nums.reduce((pre,current)=> {
+//     return pre > current ? pre: current;
+// });
+
+// console.log(largestNum);
+//  let highestMarks = nums.filter((marks,index)=> {
+//     return marks >= 90;
+//  })
+
+//  console.log(highestMarks)
+
+//  let n  = [4,5,6,3,6,3];
+
+//  let array = n.map(element => {
+//        //  console.log(element)
+//  });
+
+//  console.log(array)
+
+let num = prompt("Enter a number: ")
+
+let array = [];
+
+for(let i =1; i<=num;i++){
+       array.push(i)
+}
+
+let sum = array.reduce ((pre,curr)=>{
+       return pre+curr
+})
+
+console.log(`The sum of all numbers in array: ${array} is ${sum}`);
+
+let product = array.reduce((pre,curr)=>{
+       return pre * curr;
+})
+
+console.log(`The product of all numbers in array: ${array} is ${product}`);
+
