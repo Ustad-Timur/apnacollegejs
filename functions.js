@@ -131,7 +131,8 @@
 //  });
 
 //  console.log(array)
-
+// practice question 
+function sumandproduct(){
 let num = prompt("Enter a number: ")
 
 let array = [];
@@ -151,4 +152,4 @@ let product = array.reduce((pre,curr)=>{
 })
 
 console.log(`The product of all numbers in array: ${array} is ${product}`);
-
+}
